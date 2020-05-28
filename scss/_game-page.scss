@@ -1,0 +1,14 @@
+.game-page {
+    height: 100vh;
+    background-image: url('../images/bgcimg-stuttgart.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+    transition: transform 0.9s ease-out;
+    
+    .show-game-screen & {
+       transform: translateY(-100%);
+       
+    }
+}
+

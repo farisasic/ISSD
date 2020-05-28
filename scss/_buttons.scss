@@ -1,0 +1,83 @@
+.btn {
+    background-color: #222629;
+    border-radius: 10px;
+    border: 3px solid #2e68b1;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Super Nintendo', sans-serif; 
+    font-size: 2em;    
+    }
+
+.btn-press-start {
+    animation: blinkingText 1.2s infinite;
+}
+
+.press-start {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-right: -50%;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+.btn-end{
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    background-color: #222629;
+    color: #2e68b1;
+    border-radius: 10px;
+    border: 3px solid #2e68b1;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Super Nintendo', sans-serif; 
+    transition: all 0.5s ease 0s;
+    padding: 10px;
+}
+
+.btn-end:focus,
+.btn-end:active,
+.btn-end:hover {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.5s ease 0s;
+    border: 3px solid white;
+}
+
+.btn-yes,
+.btn-no {
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    background-color: #222629;
+    color: #2e68b1;
+    border-radius: 10px;
+    border: 3px solid #2e68b1;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Super Nintendo', sans-serif; 
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+.btn-yes:hover {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.5s ease 0s;
+    border: 3px solid white;
+}
+
+
+
+.btn-no:hover {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.5s ease 0s;
+    border: 3px solid white;
+}

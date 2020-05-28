@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0; }
+
+.top-bar span {
+  font-family: 'Super Nintendo', sans-serif;
+  font-size: 3.3rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background-color: #222629;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 10px; }
+
+.top-bar h1 {
+  text-align: center;
+  padding-top: 20px; }
+
+.match span {
+  font-family: 'Super Nintendo', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: #222629;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 3px; }
+
+.goal span {
+  font-family: 'Super Nintendo', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: #222629;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 3px; }
+
+.match,
+.goal,
+.end-game {
+  padding: 20px; }
+
+.play-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 480px;
+  display: grid;
+  background: #222629;
+  padding: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  border-radius: 10px; }
+
+.title {
+  display: flex;
+  height: 100vh;
+  background-image: url(../images/background-image.jpg);
+  background-position: top center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  transition: transform 2s ease;
+  position: relative; }
+  .show-game-screen .title {
+    transform: translateY(-100%); }
+
+.btn {
+  background-color: #222629;
+  border-radius: 10px;
+  border: 3px solid #2e68b1;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Super Nintendo', sans-serif;
+  font-size: 2em; }
+
+.btn-press-start {
+  animation: blinkingText 1.2s infinite; }
+
+.press-start {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-right: -50%;
+  top: 50%;
+  left: 50%;
+  z-index: 2; }
+
+.btn-end {
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  background-color: #222629;
+  color: #2e68b1;
+  border-radius: 10px;
+  border: 3px solid #2e68b1;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Super Nintendo', sans-serif;
+  transition: all 0.5s ease 0s;
+  padding: 10px; }
+
+.btn-end:focus,
+.btn-end:active,
+.btn-end:hover {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: all 0.5s ease 0s;
+  border: 3px solid white; }
+
+.btn-yes,
+.btn-no {
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  background-color: #222629;
+  color: #2e68b1;
+  border-radius: 10px;
+  border: 3px solid #2e68b1;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Super Nintendo', sans-serif;
+  padding: 10px;
+  cursor: pointer; }
+
+.btn-yes:hover {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: all 0.5s ease 0s;
+  border: 3px solid white; }
+
+.btn-no:hover {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: all 0.5s ease 0s;
+  border: 3px solid white; }
+
+@font-face {
+  font-family: 'Super Nintendo';
+  src: url("../fonts/SNES-Italic.woff") format("woff"), url("../fonts/SnesItalic-AegA.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@keyframes blinkingText {
+  0% {
+    color: #2e68b1; }
+  49% {
+    color: #2e68b1; }
+  60% {
+    color: transparent; }
+  99% {
+    color: transparent; }
+  100% {
+    color: #2e68b1; } }
+.game-page {
+  height: 100vh;
+  background-image: url("../images/bgcimg-stuttgart.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  position: relative;
+  transition: transform 0.9s ease-out; }
+  .show-game-screen .game-page {
+    transform: translateY(-100%); }
+
+.card {
+  position: relative;
+  overflow: hidden; }
+  .card img {
+    display: block; }
+  .card .match-ball {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    transition: transform 0.7s ease;
+    transition-timing-function: cubic-bezier(0.31, -0.41, 0.7, 0.18);
+    cursor: pointer; }
+  .card .match-ball {
+    bottom: 0; }
+    .open .match-ball {
+      transform: translateY(-100%); }
+
+.pop-up-window-win {
+  font-family: 'Super Nintendo', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #222629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: visibility 0s ease, opacity 1s ease;
+  visibility: hidden;
+  opacity: 0.2; }
+  .pop-up-window-win.show {
+    visibility: visible;
+    opacity: 1; }
+
+.pop-up-window-lose {
+  font-family: 'Super Nintendo', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #222629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: visibility 0s ease, opacity 1s ease;
+  visibility: hidden;
+  opacity: 0.2; }
+  .pop-up-window-lose.show {
+    visibility: visible;
+    opacity: 1; }
+
+.pop-up-cont {
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase; }
+  .pop-up-cont .pop-text {
+    margin-bottom: 1em; }
+    .pop-up-cont .pop-text p:first-child {
+      color: white;
+      font-size: 3em;
+      margin-bottom: 0.5em; }
+    .pop-up-cont .pop-text p {
+      color: white;
+      font-size: 1.7em; }
+  .pop-up-cont .play-again p {
+    animation: blinkingText 1.2s infinite;
+    color: white;
+    font-size: 2em;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+/*# sourceMappingURL=styles.css.map */

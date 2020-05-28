@@ -1,0 +1,54 @@
+.top-bar span {
+    font-family: 'Super Nintendo', sans-serif; 
+    font-size: 3.3rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background-color: #222629;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.top-bar h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.match span{
+    font-family: 'Super Nintendo', sans-serif; 
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: #222629;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.goal span{
+    font-family: 'Super Nintendo', sans-serif; 
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: #222629;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+
+
+.match,
+.goal,
+.end-game
+ {
+    padding: 20px;
+}
+

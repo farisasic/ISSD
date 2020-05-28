@@ -1,0 +1,16 @@
+.title {
+display: flex;
+    height: 100vh;
+    background-image: url(../images/background-image.jpg);
+    background-position: top center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s ease;
+    position: relative;
+    
+    .show-game-screen & {
+        transform: translateY(-100%);
+    }
+}
+

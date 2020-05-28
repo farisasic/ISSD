@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Super Nintendo';
+    src: url('../fonts/SNES-Italic.woff') format('woff'),
+         url('../fonts/SnesItalic-AegA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes blinkingText {
+    
+    0%{color: #2e68b1;}
+    49%{color: #2e68b1;}
+    60%{color: transparent;}
+    99%{color: transparent;}
+    100%{color: #2e68b1;}
+    
+}

@@ -1,0 +1,75 @@
+.pop-up-window-win {
+    font-family: 'Super Nintendo', sans-serif; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #222629;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: visibility 0s ease, opacity 1s ease; 
+    visibility: hidden;
+    opacity: 0.2;
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
+
+.pop-up-window-lose {
+    font-family: 'Super Nintendo', sans-serif; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #222629;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: visibility 0s ease, opacity 1s ease;
+    visibility: hidden;
+    opacity: 0.2;
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
+
+
+
+.pop-up-cont {
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    .pop-text {
+        p:first-child {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        margin-bottom: 1em;
+        
+        p {
+            color: white;
+            font-size: 1.7em;
+        }
+    }
+
+    .play-again p {
+        animation: blinkingText 1.2s infinite;
+        color: white;
+        font-size: 2em;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

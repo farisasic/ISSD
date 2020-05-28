@@ -1,0 +1,28 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    
+    img {
+        display: block;
+    } 
+
+.match-ball {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    transition: transform 0.7s ease;  
+    transition-timing-function: cubic-bezier(.31,-0.41,.7,.18);
+    cursor: pointer;
+}
+
+
+.match-ball {
+        bottom: 0;
+        
+    @at-root .open .match-ball{
+    transform: translateY(-100%);
+}
+    }
+
+}
+
